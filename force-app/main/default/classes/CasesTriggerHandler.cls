@@ -19,7 +19,7 @@ public without sharing class CasesTriggerHandler {
     private static void handleAutoAcceptClose(Case record) {
         if (String.isNotBlank(ID_DAVID_LIU_STR)) {
             case.Status = STATUS_CLOSED;
-            case.Owner = ID_DAVID_LIU_STR;
+            case.OwnerId = ID_DAVID_LIU_STR;
         }
     }
 }
