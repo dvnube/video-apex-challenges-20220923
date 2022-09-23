@@ -1,7 +1,7 @@
-trigger CasesTrigger on Case(after insert) {
-    if (Trigger.isAfter) {
+trigger CasesTrigger on Case(before insert) {
+    if (Trigger.isBefore) {
         if (Trigger.isInsert) {
-            CasesTriggerHandler.afterInsert(Trigger.new);
+            CasesTriggerHandler.beforeInsert(Trigger.new);
         }
     }
 }
